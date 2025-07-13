@@ -33,6 +33,11 @@ p {
   padding: 0;
 }
 
+h1{
+  color: #000000;
+  font-style: bolds;
+}
+
 aside {
   width: 300px;
   margin: 20px auto;
