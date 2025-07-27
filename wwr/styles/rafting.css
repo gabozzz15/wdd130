@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #1A6BB0;
     --secondary-color: #F1E884;
     --accent1-color: #FFD448;
@@ -10,6 +10,52 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.history {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 300px 1fr;
+}
+
+.history h2 {
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures {
+    display: grid;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+
+.adventures div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.adventures div figure {
+    height: 100%;
+    width: 100%;
+}
+
+.adventures div figure img {
+    width: 100%;
+    height: 100%;
 }
 
 * {
@@ -22,6 +68,23 @@ body {
     font-family: var(--body-font);
     line-height: 1.6;
     color: var(--accent1-color);
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
 header, main, footer {
@@ -39,17 +102,17 @@ nav, p, section, article {
     padding: 8px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
     margin: 20px;
 }
 
-.socialmedia a{
+.socialmedia a {
     text-decoration: none;
 }
 
-.hero{
+.hero {
     position: relative;
 }
 
@@ -59,7 +122,7 @@ nav a{
     height: auto;
 }
 
-h1{
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -80,4 +143,14 @@ article {
 .hero article img {
     float: right;
     width: 200px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 40px;
 }
