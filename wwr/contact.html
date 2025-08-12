@@ -16,10 +16,10 @@
 </head>
 <body>
 
-    <header>
+    <header id="main-header">
         <img src="images/logo2.jpeg" alt="Rafting Logo" width="150">
 
-        <nav>
+        <nav id="main-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -27,43 +27,49 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Contact Us</h1>
+    <main id="main-content">
+        <div class="hero" id="contact-hero">
+            <img src="images/hero.jpg" alt="image for the hero section">
+            <h1>Contact</h1>
+        </div>
 
-        <section class="company-info">
-            <h2>Our Information</h2>
-            <p><strong>Address:</strong> Cumana, Sucre, Venezuela</p>
-            <p><strong>Phone:</strong> +58 4120805543</p>
-            <p><strong>Email:</strong> info@raftingadventures.com</p>
-
-            <div class="map">
-                <h3>Find Us Here</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31391.190888848014!2d-64.21514445821904!3d10.429600080577872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c3270eca2c00bb9%3A0x68d30e3467a22fd1!2sPlaya%20San%20Luis!5e0!3m2!1ses!2sus!4v1755016503891!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="company-section" class="company-info">
+            <div id="info-grid-container">
+                <div id="company-details">
+                    <h2>Our Information</h2>
+                    <p><strong>Address:</strong> Cumana, Sucre, Venezuela</p>
+                    <p><strong>Phone:</strong> +58 4120805543</p>
+                    <p><strong>Email:</strong> info@raftingadventures.com</p>
+                </div>
+                
+                <div id="company-map" class="map">
+                    <h2>Find Us Here</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31391.190888848014!2d-64.21514445821904!3d10.429600080577872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c3270eca2c00bb9%3A0x68d30e3467a22fd1!2sPlaya%20San%20Luis!5e0!3m2!1ses!2sus!4v1755016503891!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-
         </section>
 
-        <section class="team">
+        <section id="team-section" class="team">
             <h2>Meet Our Team</h2>
-            <div class="employees">
-                <figure>
+            <div id="employees-container" class="employees">
+                <figure class="employee-figure">
                     <img src="images/employee1.jpg" alt="Employee 1">
                     <figcaption>Juan Pérez - Tour Guide</figcaption>
                 </figure>
-                <figure>
+                <figure class="employee-figure">
                     <img src="images/employee2.jpg" alt="Employee 2">
                     <figcaption>María López - Reservations Manager</figcaption>
                 </figure>
-                <figure>
+                <figure class="employee-figure">
                     <img src="images/employee3.jpg" alt="Employee 3">
                     <figcaption>Carlos Gómez - Safety Officer</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section class="contact-form">
+        <section id="contact-form-section" class="contact-form">
             <h2>Send Us a Message</h2>
-            <form action="#" method="post">
+            <form id="message-form" action="#" method="post">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -84,16 +90,13 @@
             </form>
         </section>
 
-        <section>
-
-        <h2>Wireframe</h2>
-        <p><a href="https://app.moqups.com/RF8L00TU6zsyHuAF9NNBKwYdFzVmZm74/view/page/acaaa9c8c">View Wireframe</a></p>
-
+        <section id="wireframe-section">
+            <h2>Wireframe</h2>
+            <p><a href="https://app.moqups.com/RF8L00TU6zsyHuAF9NNBKwYdFzVmZm74/view/page/acaaa9c8c">View Wireframe</a></p>
         </section>
-        
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <p>© 2025 🎮 Rafting Adventures and Gabriel Bastardo</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
@@ -107,6 +110,5 @@
             </a>
         </nav>
     </footer>
-    
 </body>
 </html>

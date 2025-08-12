@@ -243,3 +243,42 @@ footer p {
 .contact-form button:hover {
     background-color: #155a91;
 }
+
+#company-section {
+    margin: 20px 0;
+}
+
+#info-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+#company-details {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+}
+
+#company-map {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#employees-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.employee-figure {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 0;
+}
